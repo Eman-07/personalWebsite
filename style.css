@@ -7,6 +7,7 @@ html, body{
     height: 100%;
     width: 100%;
     background-color: black;
+    /* display: flex; */
 }
 nav{
     display: flex;
@@ -51,6 +52,7 @@ nav ul li a:hover::after{
     height: 200px;
     border-radius: 100%;
 }
+
 /* creating the heading Software Engineer */
 
 #software_engineer a{ 
@@ -65,14 +67,14 @@ nav ul li a:hover::after{
     position: relative;
 }
 #software_engineer span{
-    color: #ff004f;
+    color: red;
 }
 #software_engineer a::after{
 
     content: '';
     width: 0%;
     height: 5px;
-    background: #ff004f;
+    background: whitesmoke;
     position: absolute; 
     left: 4px;
     display: flex;
@@ -85,30 +87,141 @@ nav ul li a:hover::after{
     content: '';
     width: 100%;
     height: 5px;
-    background: #ff004f;
+    background: red;
     position: absolute; 
     left: 4px;
     display: flex;
     bottom: 0px;
         
 }
-/* introduction formatting */
+
 #intro{
-    margin: 10px 80px;
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-}
-#intro span{
-    color: #ff004f;
-}
-#list{
-    margin-top: 20px;
-    font-size: 20px;
-}
-#exp1{
-    color: aquamarine;
-}
-#imgs img{
-    height: 500px;
+    height: 400px;
+    width: 100%;
+    /* background-color: yellow; */
     display: flex;
 }
+
+#introleft{
+    height: 800px ;
+    width: 50%;
+    background-color: red;
+
+    color: white;
+    margin-left: 80px;
+    margin-top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#dot{
+    color: red;
+}
+#Name{
+    color: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+#Name::after{
+
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: orangered;
+    position: absolute; 
+    left: 4px;
+    display: flex;
+    bottom: -1.5px;
+    transition: .3s;
+        
+}
+#Name:hover:after{
+
+    content: '';
+    width: 98%;
+    height: 5px;
+    background: red;
+    position: absolute; 
+    left: 4px;
+    display: flex;
+    bottom: -1.5px;
+        
+}
+#skills{
+    margin-top: 10px;
+    color: antiquewhite;
+    margin-left: 300px;
+    /* text-decoration: overline; */
+    /* text-decoration: underline; */
+
+}
+#intro h2{
+    color: #ff004f;
+}
+#intro li{
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: aquamarine;
+}
+#intro a{
+    color: aquamarine;
+    text-decoration: none;
+    position: relative;
+}
+
+#intro a::after{
+    content: '';
+    background-color: aquamarine;
+    position: absolute;
+    height: 4px;
+    width: 0;
+    display: flex;
+    left: 2px;
+    bottom: -5px;
+    transition: 1s;
+}
+
+#intro a:hover::after{
+    content: '';
+    background-color: yellow;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    display: flex;
+    left: 2px;
+    bottom: -5px;
+    transition: .5s;
+
+}
+
+
+
+#introright{
+    height: 800px;
+    width: 50%;
+    background-color: aqua;
+}
+#introrightC1{
+    display: flex;
+}
+#introrightC1 img{
+    margin: 20px 20px;
+    border-radius: 50px;
+    display: flex;
+}
+#introrightC2 img{
+    padding: 20px 30px;
+    height: 500px;
+    margin-left: 200px;
+    border-radius: 100px;
+
+}
+
+
+#next{
+        height: 1000px;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 500px;
+        display: flex;
+    }
