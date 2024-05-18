@@ -1,6 +1,229 @@
-body{
-    background-color: aquamarine;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+background-color: black;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color: lime; */
+}
+
+/* creating first page */
+#first{
+    height: 900px;
+    width: 100%;
+}
+
+/* aligning items in menu */
+#first nav{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+/* creating logo Eman.dev*/
+#logo{
+    height: 50px;
+    width: 100px;
+    /* background-color: blue; */
+    margin: 5px;
+}
+#logo h1{
+    padding: 15px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system;
+    color: white;
+}
+#logo h1 span{
+    font-size: 20px;
+    color: red;
+}
+
+/* setting up buttons in menu */
+#first nav ul li{
+    margin:11px 30px;
+    display: flex;
+    justify-content: space-between; 
+    display: inline-block;
+    list-style: none;
+
+
+}
+#first nav ul li a{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 80px;
-    font-weight: 1000;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a{
+    /*formatting nav bar*/
+    color: white;
+    text-decoration: none; /*removes underline from txt*/
+    font-size: 18px;
+    position: relative;
+}
+
+#first nav ul li a::after{
+    /*adding hover effect*/
+    content: '';
+    width: 0;
+    height: 1.5px;
+    background: #ff004f;
+    position: absolute; 
+    left: 0;
+    bottom: -6px;
+    transition: .3s;
+}
+#first nav ul li a:hover::after{
+    /*adding hover effect*/
+    content: '';
+    width: 100%;
+    height: 2pxpx;
+    background: tan;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+#intro{
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+#introleft{
+    height: 100%;
+    width: 20%;
+    /* background-color: lightblue; */
+}
+
+#myimg1{
+    height: 300px;
+    margin-left: 70px;
+    margin-top: 50px;
+    /* border-radius: 50px; */
+    animation-name: img1animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+    align-items: center;
+    display: flex;
+    margin: 50px;
+    border-radius: 50px;
+    transition: transform 0.3s ease
+
+}
+@keyframes img1animation{
+
+    0%{
+        opacity: 100%;
+        height: 250px;
+        border-radius: 10px;
+
+    }
+    50%{
+        opacity: 100%;
+        height: 250px;
+        border-radius: 50px;
+    }
+    100%{
+
+        height: 250px;
+        border-radius: 10px;
+    }
+}
+
+#introright{
+    height: 100%;
+    width: 80%;
+    /* background-color: coral; */
+}
+
+@keyframes appear1 {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+    
+}
+#aboutme{
+    position: relative;
+    animation-name: appear1;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    font-style: oblique;
+    /* font-variant: small-caps; */
+    color: cyan;
+    font-size: 50px;
+    font-family: 'Peotsen One' , system-ui, -apple-system;
+    margin-top: 20px;
+}
+#para1{
+    /* margin-left: 100px; */
+    margin-right: 80px;
+    margin-top: 20px;
+    color: white;
+    font-family: system-ui;
+    font-size: 25px;
+
+    animation-name: paragraph;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes paragraph {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+#introright span{
+    color: red;
+}
+
+.tab{
+    display: flex;
+    margin-top: 15px;
+}
+.tab-options{
+    margin-right: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    position: relative;
+    cursor: pointer;
+}
+.tab-options::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute; 
+    left: 0;
+    bottom: -6px;
+    transition: .3s;
+    
+}
+.tab-options.education:hover::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute; 
+    left: 0;
+    bottom: -6px;
+    transition: .3s;
+    
 }

@@ -9,14 +9,6 @@ html, body{
     background-color: black;
     /* display: flex; */
 }
-#ribbon{
-    height: 10px;
-    width: 100%;
-    background-color: royalblue;
-    border-radius: 50px;
-    display: flex;
-    border-style: hidden;
-}
 nav{
     margin-top: -3%;
     display: flex;
@@ -36,6 +28,7 @@ nav ul li a{
     text-decoration: none; /*removes underline from txt*/
     font-size: 18px;
     position: relative;
+    font-family: system-ui, -apple-system;
 }
 nav ul li a::after{
     /*adding hover effect*/
