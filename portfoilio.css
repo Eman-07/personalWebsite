@@ -204,6 +204,7 @@ nav ul li a{
     font-family: monospace;
     position: relative;
     cursor: pointer;
+    font-weight: 1000;
 }
 .tab-options::after{
     content: '';
