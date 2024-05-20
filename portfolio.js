@@ -14,3 +14,7 @@ function zoomIn() {
 function zoomOut() {
     image.style.transform = 'scale(1)'; // Reset scale to normal
 }
+
+
+
+

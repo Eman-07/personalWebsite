@@ -35,7 +35,7 @@
 
             <div id="intro">
                 <div id="introleft">
-                    <img id="myimg1" src="images/myimg1.jpeg" alt="">
+                    <img id="myimg1" src="images/img1.jpg" alt="">
                 </div>
 
                 <div id="introright">
@@ -43,21 +43,22 @@
                     <p id="para1">Hello! I am <span id="eman">Muhammad Eman</span>, a dedicated student and an enthusiastic developer with a passion for technology and creativity. As a developer, I thrive on creating innovative solutions and building impactful projects. My technical skills are complemented by my keen interest in gaming and video editing, hobbies that fuel my creativity and enhance my problem-solving abilities. Whether I'm coding a new application, immersed in a game, or crafting a compelling video, I bring dedication, precision, and a love for learning to everything I do. Welcome to my portfolio, where you can explore my journey and the projects that showcase my skills and passions. </p>
 
                     <div class="tab">
-                        <p class="tab-options education">Education</p>
-                        <p class="tab-options skills">Skills</p>
-                        <p class="tab-options exp">Experience</p>
+                        <p class="tab-options active" onclick="opencontents('education')">Education</p>
+                        <p class="tab-options" onclick="opencontents('skills')">Skills</p>
+                        <p class="tab-options" onclick="opencontents('experience')">Experience</p>
                     </div>
 
-                    <div class="tab-contents education">
+                    <div class="tab-contents active_content" id="education">
                         <ul>
                             <li><span>2024(Now)</span> <br>Studying Software Engineering from CUI Lahore</li>
+                            <li><span>2023</span><br>Pearsons Test for English Proficiency<br>71/90   </li>
                             <li><span>2023</span> <br>Passed Intermediate <br>Studied ICS <br>External Grade : A+ <br>Internal Grade : A+</li>
                             <li><span>2021</span> <br>Passed Matriculation <br>Science Group <br>Internal Grade : A+ <br>External Grade : A+</li>
                         </ul>
                     </div>
 
 
-                    <div class="tab-contents skills">
+                    <div class="tab-contents " id="skills">
                         <ul>
                            <li><span>FrontEnd developer</span><br>I can design various websites including Portfolio Websites, personal branding websites & Ecommerce Websites</li>
                            <li><span>BackEnd developer</span> <br>I can handle backend of games <br>I can develope Full Functional Calculator <br>I can develope Automation Tools</li>
@@ -68,14 +69,12 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents experience">
+                    <div class="tab-contents" id="experience">
                         <ul>
-                           <li><span>FrontEnd developer</span><br>I can design various websites including Portfolio Websites, personal branding websites & Ecommerce Websites</li>
-                           <li><span>BackEnd developer</span> <br>I can handle backend of games <br>I can develope Full Functional Calculator <br>I can develope Automation Tools</li>
-                           <li><span>Graphic Designer</span> <br>I can Design motion Graphis <br>I can edit documentary videos</li>
-                           <li><span>Data Analyst</span><br>I can extract various insights from a data using different tool</li>
-                           <li><span>Football Player</span><br>I can play at AM ,CM and LW</li>
-                           <li><span>Gamer</span><br>I love playing video games <br>I have a great skills in FPS games and Battle Royale Games</li>
+                           <li><span>BackEnd Development</span><br>2 year experience<br>Worked on many projects <br>Developed a library Management Software</li>
+                           <li><span>FrontEnd Development</span><br>1 month experience<br>Designed & Developed Personal Branding Website <br>Developed Portfolio Website</li>
+                           <li><span>MS Office</span><br>3 years of experience<br>Created various Documents & Presentaions<br>Managed large Records</li>
+                           <li><span>Video Editing / Motion Graphics</span><br>3 Years experience<br>Worked on multiple projects</li>
                         </ul>
                     </div>
 
@@ -95,7 +94,22 @@
             <p>The projects that I have worked upon are showcased here</p>
         </div>
     </div>
-    <script src="portfolio.js"></script>
+    <script >
+        var tablinks = document.getElementsByClassName("tab-options");
+var tabconts = document.getElementsByClassName("tab-contents");
+function opencontents(name){
+    for(tablink of tablinks){
+        tablink.classList.remove("active");
+}
+    for(tabcont of tabconts)
+        {
+        tabcont.classList.remove("active_content");
+    }
+
+    event.currentTarget.classList.add("active");
+    document.getElementById(name).classList.add("active_content")
+}
+    </script>
 </body>
 
 </html>

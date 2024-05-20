@@ -256,24 +256,26 @@ nav ul li a:hover::after{
     content: '';
     background-color: yellow;
     position: absolute;
-    height: 1px;
-    width: 0%;
-    display: flex;
-    left: 10%;
-    /* bottom: -5px; */
-    transition: .5s;
+    width: 0;
+    height: 1.5px;
+    background: tan;
+    position: absolute;
+    left: 0;
+    /* bottom: -6px; */
+    transition: 1s;
 }
 #c:hover::after{
     content: 'I have created many projects using C language.\nI was my first language. I have deep knowledge of C language. I have been using C language for 2 years. I can solve complex problems using C language.';
     background-color: royalblue;
     color: royalblue;
     position: absolute;
-    height: 2px;
-    left: 80%;
-    bottom: -155px;
-    width: 18%;
-    display: flex;
-    transition: .5s;
+    background: tan;
+
+    width: 15%;
+    height: 1.5px;
+    left: 70px;
+    bottom: -500px;
+    transition: 1s;
 }
 #html{
     margin-left: 280px;
@@ -292,15 +294,15 @@ nav ul li a:hover::after{
 }
 #html:hover::after{
     content: 'I am expert in HTML. I have written a lot code in HTML. This website is also desinged by me using HTML. I can code complex websites using HTMl. I can design high quality websites using HTML.';
-    background-color: rgb(48, 3, 231);
-    color: rgb(38, 13, 199);
+    background-color: white;
+    color: orangered;
     position: absolute;
-    height: 2px;
-    left: 80%;
-    bottom: -155px;
-    width: 18%;
-    display: flex;
-    transition: .3s;
+
+    width: 15%;
+    height: 1.5px;
+    left: 400px;
+    bottom: -500px;
+    transition: 1s;
 }
 
 #css{
@@ -323,12 +325,12 @@ nav ul li a:hover::after{
     background-color: royalblue;
     color: skyblue;
     position: absolute;
-    height: 2px;
-    left: 80%;
-    bottom: -155px;
-    width: 18%;
-    display: flex;
-    transition: .3s;
+
+    width: 15%;
+    height: 1.5px;
+    left: 700px;
+    bottom: -500px;
+    transition: 1s;
 }
 
 #boxr{
