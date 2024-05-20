@@ -302,7 +302,7 @@ nav ul li a:hover::after{
     height: 1.5px;
     left: 400px;
     bottom: -500px;
-    transition: 1s;
+    transition: 1.1s;
 }
 
 #css{
