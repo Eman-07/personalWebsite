@@ -35,7 +35,7 @@
 
             <div id="intro">
                 <div id="introleft">
-                    <img id="myimg1" src="images/img1.jpg" alt="">
+                    <img id="myimg1" src="images/myimg1.jpeg" alt="">
                 </div>
 
                 <div id="introright">
@@ -86,30 +86,54 @@
         </div>
 
         <!-- second page -->
-        <div id="second">
+        <div ID="second">
 
             <h1>My Projects</h1>
             <BR></BR>
 
-            <p>The projects that I have worked upon are showcased here</p>
-        </div>
-    </div>
-    <script >
-        var tablinks = document.getElementsByClassName("tab-options");
-var tabconts = document.getElementsByClassName("tab-contents");
-function opencontents(name){
-    for(tablink of tablinks){
-        tablink.classList.remove("active");
-}
-    for(tabcont of tabconts)
-        {
-        tabcont.classList.remove("active_content");
-    }
+            <p id="para2">The projects that I have worked upon are showcased here</p>
 
-    event.currentTarget.classList.add("active");
-    document.getElementById(name).classList.add("active_content")
-}
-    </script>
+
+
+             <div class="proj">
+
+
+                <div class="proj first">
+                    <img id="personalweb" src="images/personalweb.png" alt=""  onclick="location.href='index.html'">
+                    <pre> <h1>Personal Website</h1> <br></pre>
+                    
+                    <p><span>I developed this project as part of my university semester coursework and a platform for showcasing my personal and professional journey. This multi-page website features a Home section where you can learn more about me, a Portfolio section highlighting my projects and achievements, and a Contact section for networking and collaboration    opportunities.I am committed to continuously updating and expanding this website, adding new pages and content to    reflect my growth and experiences.</span> </p>
+
+                </div>
+
+                <div class="proj second">
+                    <img id="library" src="images/library.jpg" alt=""  onclick="location.href='https://github.com/Eman-07/Cprograms/blob/main/libraryManager.c'">
+
+                    <pre> <h1>Library Management Software</h1> <br></pre>
+
+                    <p><span>Welcome to my library management software, a comprehensive system I developed as part of my university semester project and as a tool to streamline library operations. This software features a Home section where you can learn about its capabilities, a Catalog section to browse and manage book collections, and a Contact section for support and inquiries. I am dedicated to continuously enhancing this software, adding new features and functionalities to meet evolving needs. Stay tuned for more updates and thank you for choosing my library management software!
+
+                    </span> </p> 
+                </div>
+
+
+                <div class="proj third">
+
+                </div>
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="portfolio.js"></script>
 </body>
 
 </html>
