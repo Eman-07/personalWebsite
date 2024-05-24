@@ -267,12 +267,15 @@ nav ul li a{
     width: 100%;
     height: 900px;
     background-color: white;
+    padding: 50px;
 }
 #second h1{
     font-family: system-ui;
     font-weight: 1000;
     padding-top: 40px;
     padding-left: 40px;
+
+    /* color:#141619; */
     /* font-style: italic; */
 }
 #para2{
@@ -281,19 +284,28 @@ nav ul li a{
     font-size: 50px;
     font-family: system-ui;
     font-weight: 1000;
-    color: red;
+    color: #000;
     /* display: flex; */
 }
 
 .proj{
     /* background-color: skyblue; */
+    border-radius: 50px;
+
+    transition: 1s;
+    position: relative;
+
 }
 .proj.first{
     /* display: flex; */
     /* background-color: yellow; */
     width: 25%;
-    height: 700px;
+    height: 650px;
     position: absolute;
+
+    margin-left: 50px;
+
+
     
 }
 
@@ -310,7 +322,6 @@ nav ul li a{
 
 }
 .proj h1{
-    color: red;
     margin-top: -35px;
     margin-left: 10px;
 }
@@ -320,22 +331,25 @@ nav ul li a{
     font-size: 20px;
     font-weight: 600;
     display: flex;
-    /* font-family: system-ui; */
-    /* font-family: monospace; */
+    /* color: navy; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    /* position: absolute; */
 }
 
 
 .proj.second{
-    background-color: lime;
-    height: 700px;
+    /* background-color: lime; */
+    height:650px;
 
-    margin-left: 25%;
-    width: 30%;
+    margin-left: 35%;
+    width: 25%;
     position: absolute;
+
+
 }
 
-.proj.second img{
+.proj img{
     height: 200px;
     width: 400px;
 
@@ -351,8 +365,143 @@ nav ul li a{
 
 
 .proj.third{
+    height: 650px;
+    width: 25%;
+    margin-left: 65%;
+    /* background-color: palevioletred; */
+
+    position: absolute;
+}
+
+
+.proj.fourth{
     height: 700px;
     width: 25%;
-    margin-left: 55%;
-    background-color: palevioletred;
+
+    margin-left: 75%;
+    /* background-color: tan; */
+}
+
+
+
+
+
+
+#github{
+    width: 250px;
+}
+
+
+
+
+/* Adding dynamic effects on hovering */
+
+
+
+.proj:hover{
+
+    font-size: 15px;
+    height: 650px;
+    width: 31%;
+    padding: 30px;
+
+    background-color: black;
+    transition: 1s;
+    transition-duration: 1s ;
+    /* transform: perspective(dynamic); */
+
+    position: absolute;
+    color: aqua;
+
+}
+
+
+
+/* Third page*/
+
+.thirdpage{
+
+    height: 900px;
+    width: 100%;
+    background-color: #178582;
+    /* display: flex; */
+    color: #bfa181;
+
+    
+    /* color: blue; */
+    /*navy blue #2272FF; */
+    /* turqoise #178582 */
+    /* gold #BFA181 */
+
+}
+
+.thirdpage h1{
+    font-family: system-ui;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-weight: 1000;
+
+}
+
+.thirdpage img{
+    padding-left: 35%;
+    padding-top: 150px;
+    cursor: pointer;
+}
+
+
+.fourthpage{
+    height: 900px;
+    width: 100%;
+    background-color: black;
+
+    /* display: flex; */
+}
+
+.fourthpage h1{
+    color: #bfa181;
+    padding: 30px;
+
+    font-family: system-ui; 
+}
+
+
+
+
+
+.fourthpage.projects{
+    height: 500px;
+    width: 100%;
+    /* background-color: tan; */
+    padding-left: 120px;
+}
+.fourthpage.proj1{
+    /* background-color: yellow; */
+    height: 500px;
+    width: 25%;
+    margin-left: 5%;
+    position: absolute;
+}
+
+.fourthpage video{
+    margin: 60px;
+    border-radius: 50px;
+}
+
+.fourthpage.proj2{
+    height: 500px;
+    width: 25%;
+    background-color: aqua;
+    margin-left: 30%;
+
+    position: absolute;
+}
+
+
+.fourthpage.proj3{
+
+    height: 500px;
+    width: 25%;
+    background-color: pink;
+    margin-left: 55%; 
 }

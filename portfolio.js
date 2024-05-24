@@ -59,3 +59,14 @@ function zoomIn3() {
 function zoomOut3() {
     img3.style.transform = 'scale(1)'; // Reset scale to normal
 }
+
+// *********************
+const img4 = document.getElementById('game');
+img4.addEventListener('mouseenter', zoomIn4);
+img4.addEventListener('mouseleave', zoomOut4);
+function zoomIn4() {
+    img4.style.transform = 'scale(1.2)'; // Increase scale for zoom effect
+}
+function zoomOut4() {
+    img4.style.transform = 'scale(1)'; // Reset scale to normal
+}
