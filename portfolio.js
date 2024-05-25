@@ -1,3 +1,8 @@
+alert("⚠️⚠️⚠️This Website is not Optimized Dynamically,So kindly adjust your view scale to 80%\nTo adjust scale press CTRL - or ctrl + \nSorry For Inconvenience😕");
+
+
+
+
 var tablinks = document.getElementsByClassName("tab-options");
 var tabconts = document.getElementsByClassName("tab-contents");
 function opencontents(name){
@@ -70,3 +75,6 @@ function zoomIn4() {
 function zoomOut4() {
     img4.style.transform = 'scale(1)'; // Reset scale to normal
 }
+
+
+

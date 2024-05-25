@@ -1,3 +1,9 @@
+
+
+
+alert("⚠️⚠️⚠️This Website is not Optimized Dynamically,So kindly adjust your view scale to 80%\nTo adjust scale press CTRL - or ctrl + \nSorry For Inconvenience😕");
+
+
 // Select the image element
 const image = document.getElementsByClassName('zoomableImage')
 
@@ -14,3 +20,5 @@ function zoomIn() {
 function zoomOut() {
     image.style.transform = 'scale(1)'; // Reset scale to normal
 }
+
+
