@@ -1,7 +1,7 @@
 
 
 
-alert("⚠️⚠️⚠️This Website is not Optimized Dynamically,So kindly adjust your view scale to 80%\nTo adjust scale press CTRL - or ctrl + \nSorry For Inconvenience😕");
+alert("⚠️⚠️⚠️This Website is not Optimized Dynamically,So kindly adjust your view scale to 80%\nTo adjust scale press CTRL - or ctrl + \nIt will be optimized soon\nSorry For Inconvenience😕\n");
 
 
 // Select the image element

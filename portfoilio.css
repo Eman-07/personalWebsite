@@ -513,4 +513,11 @@ nav ul li a{
 
     margin-left: 60px;
     color: aqua;
+    font-size: 20px;
+}
+
+.projects h1{
+    margin-left: 110px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
