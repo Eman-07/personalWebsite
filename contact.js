@@ -1,5 +1,5 @@
 // Select the image element
-const image = document.getElementById('zoomableImage');
+const image = document.getElementsByClassName('zoomableImage')
 
 // Add event listeners for mouse hover
 image.addEventListener('mouseenter', zoomIn);
