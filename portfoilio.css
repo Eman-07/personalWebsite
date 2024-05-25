@@ -460,7 +460,7 @@ nav ul li a{
 
 .fourthpage h1{
     color: #bfa181;
-    padding: 30px;
+    padding-left: 30px;
 
     font-family: system-ui; 
 }
@@ -484,15 +484,16 @@ nav ul li a{
 }
 
 .fourthpage video{
-    margin: 60px;
+    margin-top: 60px;
+    margin-left: 60px;
     border-radius: 50px;
 }
 
 .fourthpage.proj2{
     height: 500px;
     width: 25%;
-    background-color: aqua;
-    margin-left: 30%;
+    /* background-color: aqua; */
+    margin-left: 33%;
 
     position: absolute;
 }
@@ -502,6 +503,14 @@ nav ul li a{
 
     height: 500px;
     width: 25%;
-    background-color: pink;
-    margin-left: 55%; 
+    /* background-color: pink; */
+    margin-left: 65%; 
+}
+
+.fourthpage p{
+    font-family: system-ui;
+    font-weight: 900;
+
+    margin-left: 60px;
+    color: aqua;
 }
