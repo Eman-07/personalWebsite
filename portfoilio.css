@@ -332,7 +332,7 @@ nav ul li a{
     font-weight: 600;
     display: flex;
     /* color: navy; */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: system-ui;
 
     /* position: absolute; */
 }
